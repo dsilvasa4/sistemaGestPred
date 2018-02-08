@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<display-name> Sistema de Información para la Gestión de Predicciones mediante Aprendizaje Automático</display-name>
+
+	<context-param>
+		<param-name>defaultHtmlEscape</param-name>
+		<param-value>true</param-value>
+	</context-param>
+	
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
+	<welcome-file-list>
+		<welcome-file>inicio.jsp</welcome-file>
+	</welcome-file-list>
+	
+  	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+
+	<!-- Errores -->
+	<error-page>
+		<error-code>401</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>403</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>405</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>406</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>407</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>408</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>410</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>501</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>502</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>503</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>504</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>505</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+</web-app>
